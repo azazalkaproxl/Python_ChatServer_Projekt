@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+html {
+  font-family: 'Poppins', sans-serif;
+  background-color: hsl(222 55% 0%);
+  color: hsl(220 100% 98%);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+h1 {
+  color: hsl(220 100% 98%);
+  text-align: center;
+  margin-bottom: 1px;
+}
+#chat_messages {
+  color: hsl(220 100% 98%);
+  text-align: left;
+  margin-bottom: 1px;
+  margin-left: 1cm;
+  margin-top: 3cm;
+  font-size: 200%;
+}
+
+h2 {
+  margin-top: 0px;
+  text-align: center;
+  margin-left: 5cm;
+  color: hsl(220 35% 73%);
+  font-size: 75%;
+}
+footer {
+  font-size: 75%;
+  text-align: end;
+  text-align: right;
+  color: hsl(220 100% 98%);
+  margin-left: auto;
+}
+#title1 {
+  background-color: hsl(222 55% 5%);
+  width: 300px;
+  height: 100px;
+  margin: auto;
+  border-radius: 10px;
+  border: hsl(0 0% 30%);
+}
+
+#submitBtn {
+  border-radius: 3px;
+  cursor: pointer;
+  margin: auto;
+}
+
+#submit {
+  background-color: hsl(222 55% 5%);
+  border-radius: 20px;
+  height: 100px;
+  width: 200px;
+}
+
+.container {
+  color: hsl(220 100% 98%);
+  border: 2px solid hsl(220 26% 31%);
+  background-color: hsl(220 35% 10%);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.darker {
+  color: hsl(220 100% 98%);
+  border-color: hsl(220 37% 20%);
+  background-color: hsl(222 55% 5%);
+  width: 300px;
+}
+
+.container::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.time-right {
+  float: right;
+  color: hsl(220 35% 73%);
+}
+
+.time-left {
+  float: left;
+  color: hsl(220 35% 73%);
+}
+#space_between {
+  width: 500px;
+  height: 500px;
+}
+#login_title {
+  color: hsl(220 100% 98%);
+}
+#chat-box {
+  width: 480px;
+  height: 550px;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: hsl(222 55% 5%);
+  border-radius: 10px;
+}
+
+#messages {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.message {
+  background-color: hsl(220 35% 10%);
+  border: 1px solid hsl(220 26% 31%);
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  max-width: 80%;
+}
+
+.message p {
+  margin: 0;
+}
+
+.message .time {
+  font-size: 0.7rem;
+  color: hsl(220 35% 73%);
+  text-align: right;
+  margin-top: 4px;
+}
+:root {
+  --primary: #11998e;
+  --secondary: #38ef7d;
+  --white: #fff;
+  --gray: #9b9b9b;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid var(--gray);
+  outline: 0;
+  font-size: 1.1rem;
+  color: var(--white);
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.1rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(
+    to right,
+    var(--primary),
+    var(--secondary)
+  );
+  border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.form__field:required,
+.form__field:invalid {
+  box-shadow: none;
+}
+#login_title{
+  margin-right: auto;
+}
+#chat-box {
+  width: 477px;
+  height: 350px;
+  overflow-y: auto;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: hsl(222 55% 5%);
+  border-radius: 10px;
+  border: 1px solid hsl(220 26% 31%);
+}
+
+#messages {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.message {
+  max-width: 70%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message.me {
+  margin-left: auto;
+  background-color: hsl(200 80% 25%);
+  text-align: right;
+}
+
+.message.other {
+  margin-right: auto;
+  background-color: hsl(220 35% 10%);
+}
+
+.username {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: hsl(220 35% 73%);
+  margin-bottom: 4px;
+}
+
+.time {
+  font-size: 0.65rem;
+  color: hsl(220 35% 73%);
+  margin-top: 4px;
+}
