@@ -2,12 +2,6 @@
 <html>
   <head>
     <title>Chat-Server</title>
-    <link
-      rel="icon"
-      type="image/ico
-    "
-      href="img\conv.ico"
-    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
@@ -18,48 +12,41 @@
       <h2>Built with Python</h2>
     </div>
 
-    <div class="container">
-      <div
-        class="close-btn"
-        onclick="document.getElementById('show').checked = false"
-      ></div>
+    <div class="container" id="login-box">
       <p class="text" id="login_title">Login</p>
-      <form>
+      <form id="login-form">
         <div class="data">
           <label>Username</label>
-          <input type="text" id="username" placeholder="Enter username" required />
+          <input type="text" id="username" required />
         </div>
         <div class="btn">
           <button type="submit">Login</button>
         </div>
       </form>
     </div>
-    <h2 id="chat_messages">Chat Messages</h2>
-    <div id="space_between">
+
+    <div id="chat-area" class="hidden">
+      <h2 id="chat_messages">Chat Messages</h2>
+
       <div class="container">
-<div id="chat-box">
-  <ul id="messages"></ul>
-</div>
+        <div id="chat-box">
+          <ul id="messages"></ul>
+        </div>
 
-<div id="chat-input">
-  <div class="form__group field">
-    <input
-      type="text"
-      class="form__field"
-      placeholder="Message"
-      id="msg"
-      autocomplete="off"
-    />
-    <label for="msg" class="form__label">Message</label>
-  </div>
-</div>
-
+        <div id="chat-input">
+          <div class="form__group field">
+            <input
+              type="text"
+              class="form__field"
+              id="msg"
+              autocomplete="off"
+            />
+            <label for="msg" class="form__label">Message</label>
+          </div>
+        </div>
       </div>
-      <div class="container-darker"><p></p></div>
     </div>
-  </body>
-  <footer>
-    <h3></h3>
+
     <script src="script.js"></script>
-  </footer>
+  </body>
 </html>
