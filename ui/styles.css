@@ -248,3 +248,6 @@ footer {
   color: hsl(220 35% 73%);
   margin-top: 4px;
 }
+.hidden {
+  display: none;
+}
