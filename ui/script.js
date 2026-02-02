@@ -15,11 +15,6 @@ ws.onmessage = (event) => {
   addMessage(event.data);
 };
 
-document.getElementById('chat-form').addEventListener('submit', (e) => {
-  e.preventDefault();
-  sendMessage();
-});
-
 function sendMessage() {
   const input = document.getElementById('msg');
   if (!input.value.trim() || !username) return;
@@ -27,6 +22,14 @@ function sendMessage() {
   ws.send(`${username}|${input.value}`);
   input.value = '';
 }
+
+document.getElementById('msg').addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    sendMessage();
+  }
+});
+
 
 function addMessage(data) {
   const [sender, text, timeValue] = data.split('|');
